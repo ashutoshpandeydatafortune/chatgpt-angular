@@ -1,0 +1,12 @@
+<div class="chat-container">
+    <h2>Chat with GPT-4</h2>
+    <div class="chat-box">
+        <div class="user-input">
+            <textarea [(ngModel)]="userInput" placeholder="Type your message..."></textarea>
+            <button (click)="sendMessage()">Send</button>
+        </div>
+        <div class="chat-response" *ngIf="chatResponse">
+            <p>{{ chatResponse }}</p>
+        </div>
+    </div>
+</div>
